@@ -1,0 +1,117 @@
+---
+title: "Subject Pronoun Coding Schema"
+output: html_document
+---
+
+
+# Verb phrase
+
+Get all the verb phrase, including infinitives and gerunds. 
+
+- vc `tá falando` besteira -- verb phrase is `tá falando`
+- E se tudo der certo daqui um tempo nois `vai tá sorrindo` a toa.. 
+- espero que a gente `esteja conversadas`
+
+Do not add what is in the verb phrase in other fields (e.g., do not add `tá` to phonemic orthography).
+
+**BUT**, in cases of coordinated clauses only write the first verb. Example:
+
+- *você fala e mente* -> keep only `fala` in the verb phrase field
+
+
+In case of model verbs (e.g., quer vingar, precisa fazer, tentanto imitar), add the complete verb phrase: 
+
+- tu não `pode ter` talento - verb phrase: `pode ter`, intervening material: `yes`, negation: `yes`
+- tu `pode não ter` talento - verb phrase: `pode não ter`, intervening material: no, negation: yes
+
+**OR** enter `omitted verb`, in cases, such as:
+
+- *nós, sexta passada*
+
+Other examples:
+
+- Ele se ferrou - verb phrase: `ferrou` (intervening material: `yes`)
+- Ele está se ferrando - verb phrase: `está se ferrando` (intervening material: `yes`)
+- justo nós cara que vive de golpe - verb phrase: `vive`, intervening material: `yes`
+- não seja tu mais um! - verb phrase: `seja`, negation: `yes`, intervening material: `no`, `verb-subject` order
+- É nois -> NA (uncheck the box that says *Include tweet in the analysis*)
+
+
+# Context (clause)
+
+Get as much as you can from the clause where the pronoun is. Example:
+
+- *Enquanto focamos nos políticos, os donos deles estão sorrindo. Intocáveis. `A gente acredita que temos escolhas`. `Caso a gente mantenha` o modo atual de fazer política, jamais teremos. Não importa a legenda: quem assegura a chegada ao poder é o dinheiro. Rabos presos. Todos.* Context (clause): `a gente acredita que temos escolhas` and `caso a gente mantenha`.
+
+# Internetês
+
+- Don’t include words that are in the pronoun and verb phrase (e.g., vc).
+- We are only keeping contractions that exist in online communication (e.g. tmb, n, q, rs). 
+- We are **not** keeping slangs and things that happen in *spoken* language (e.g. mina, pra, né, gu).
+- Do not enter "kkkk" or "rsrsrs" -- common laughter can be extracted automatically
+- If there are two lexical items or more, separate them by comma (e.g., `pq, mlk`.
+- If the same contraction is repeated twice, you only need to write it once.
+
+Other things to include in this field:
+- Words that indicate stress (replacing diacritcs): eh, tah, neh 
+- Todas as siglas e abreviações (`FB`, `IG`, `FDP`, `pt` = perda total, `app`, `tbt`, `pqp`, `fdp`, `add`, `hr`, `zap``, `sms, `cd` pra cada mas não pra compact disc, `cos`, `dm`, `lab`, `vet`, `publis`, `vtnc`, `vlw`, `tt`, `tbh`, `slc` - você é `loucx`, `c` ou `c/`) vão em internetês (não entra organizações como ONU)
+- `+` when used to say *mais* and *mas*
+
+Example of slang to enter in this field: tops, publis, futibas
+
+**Não considerar hashtags (podemos fazer uma lista de hashtags automaticamente)**
+
+# Phonemic Orthography
+
+- Don’t include words that are pronoun and verb (e.g., tá).
+
+- Interjeições - `aff`, `heim`, `qualé`, `koé`
+- Repetição de letras - `baaaaaaaaaaaaaaaah guriaaaaaaaaaaa`
+- Onomatopeia - `boom`, `tchum`
+- Redução - `pô`, `pera`, `fi` (filho ou apelido?), `fia`, `mó`, `mou`
+
+Do not include slang: numa, pro, pra, futibas (slang goes in the Internetês field)
+
+Todas as formas do tweet que tem a ver com tentativa de transcrição da fala: tá, tava (quando não tá em verb), issu, bonitim, pra, né, vamo, meninah (palavras com h no final quando não marca acento) -  manter reduções que revelam um estilo regional
+Transcrição do apagamento do "r" no infinitivo
+
+H - case:
+- So if there is no need for a diacritic but there is an H then it is phonemic orthography (e.g., `meninah`), but if the word would have a diacritic then it is internetês.
+
+What is the argument to discard “pra, né”?
+
+# Intervening material
+(Yes or no) 
+
+Yes if there is something between the verb and the pronoun, that includes:
+- Aposto: Nós, `gays`, sofremos com isso.
+- Negation: A gente `nem` foi na festa.
+- Reflexive pronouns: A gente `se` dá bem.
+- Clitic pronouns: "sh tu `me` conheceu novinho bobão"
+- Adverbs: Você `também` é legal.
+- Combination of any of the above: tu `nunca me` chama amiga
+
+# Negation
+
+Yes if there is any negation of the verb.
+
+All forms of negation of the verb are included: `nem`, `não`, `nunca.`
+
+# Reference
+
+- Generic: Does not refer to the speaker, can be replaced by "as pessoas".
+- Specific: Refers to a specific person, can be replaced by specific pronouns.
+- Generic/specific: When we are not sure, use this.
+
+# Comment
+
+Write down things that can be used as examples in presentations and papers, or anything you find interesting (e.g., Vou brotar e tu?)
+
+# Not included in the analysis
+
+Uncheck the *Include tweet in the analysis* checkbox when:
+- The tweet is lyrics to a song (música geralmente tem <linebreak> e emoji de notas musicais)
+- Copula verb and you cannot tell if the pronoun is the object or the subject (e.g., *feio é nóis*)
+- when the head is an indefinite pronoun: *Nenhum de nós*, *a maioria de nós* -- the noun head is *nenhum* and *a maioria* and not *nós*
+
+
