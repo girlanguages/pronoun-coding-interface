@@ -277,6 +277,11 @@ server <- function(input, output, session) {
                 data_to_code$comments <<- ""
             } else {
                 update_code_display(session, input, 1)
+                data_to_code$phonemic <<- as.character(data_to_code$phonemic)
+                data_to_code$verb <<- as.character(data_to_code$verb)
+                data_to_code$internetes <<- as.character(data_to_code$internetes)
+                data_to_code$clause <<- as.character(data_to_code$clause)
+                data_to_code$comments <<- as.character(data_to_code$comments)
             }
             
             max_sent <<- data_to_code %>%
